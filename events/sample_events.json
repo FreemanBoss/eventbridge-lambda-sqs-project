@@ -1,0 +1,49 @@
+{
+  "events": [
+    {
+      "eventId": "evt-001-unauthorized-api",
+      "eventType": "UnauthorizedAPICall",
+      "timestamp": "2026-05-02T10:15:00Z",
+      "sourceIP": "192.168.1.100",
+      "user": "john.doe@example.com",
+      "accountId": "123456789012",
+      "region": "us-east-1",
+      "action": "DeleteDBInstance",
+      "resource": "arn:aws:rds:us-east-1:123456789012:db:production-db",
+      "result": "FAIL",
+      "errorCode": "UnauthorizedOperation"
+    },
+    {
+      "eventId": "evt-002-console-login-success",
+      "eventType": "ConsoleLogin",
+      "timestamp": "2026-05-02T10:20:15Z",
+      "sourceIP": "203.0.113.42",
+      "user": "admin@example.com",
+      "accountId": "123456789012",
+      "region": "us-east-1",
+      "mfaUsed": true,
+      "loginStatus": "SUCCESS"
+    },
+    {
+      "eventId": "evt-003-console-login-failed",
+      "eventType": "ConsoleLogin",
+      "timestamp": "2026-05-02T10:22:00Z",
+      "sourceIP": "198.51.100.85",
+      "user": "unknown.user@example.com",
+      "accountId": "123456789012",
+      "region": "us-east-1",
+      "mfaUsed": false,
+      "loginStatus": "FAILED"
+    },
+    {
+      "eventId": "evt-004-iam-policy-change",
+      "eventType": "IAMPolicyChange",
+      "timestamp": "2026-05-02T10:25:30Z",
+      "sourceIP": "10.0.0.50",
+      "user": "devops-automation@example.com",
+      "accountId": "123456789012",
+      "region": "us-east-1",
+      "action": "PutUserPolicy"
+    }
+  ]
+}

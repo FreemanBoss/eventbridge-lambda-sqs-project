@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+ENV/
+
+# CDK
+cdk.out/
+dist/
+node_modules/
+*.d.ts
+*.js
+!jest.config.js
+
+# AWS
+.aws/credentials
+.aws/config
+*.pem
+*.pub
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Terraform/IaC
+.terraform/
+terraform.tfvars
+*.tfstate
+*.tfstate.*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Infrastructure/CDK outputs
+infrastructure/outputs/*.json
+infrastructure/outputs/stack-output.txt
